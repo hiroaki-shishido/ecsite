@@ -1,6 +1,5 @@
 package com.internousdev.ecsite.action;
-
-import java.util.Map;
+ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
@@ -9,9 +8,10 @@ import com.internousdev.ecsite.dto.BuyItemDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 
+
 public class HomeAction extends ActionSupport implements SessionAware {
 	public Map<String,Object> session;
-	
+
 	public String execute() {
 		String result = "login";
 		if (session.containsKey("id")) {
@@ -34,6 +34,6 @@ public class HomeAction extends ActionSupport implements SessionAware {
 		return this.session;
 	}
 
- 
+
 
 }
